@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motlapz Tech School | IT Courses Johannesburg | Home</title>
+  <meta name="description" content="Motlapz Tech Student Hub offers Cyber Security, Networking, Software Development courses in Johannesburg. Affordable IT education.">
+  <meta name="keywords" content="IT school Johannesburg, cyber security course, Motlapz Tech">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <header>
+    <img src="images/school-logo.png" alt="Motlapz Tech School Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiries.html">Enquiries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero animate">
+      <img src="images/school-banner.jpg" alt="Motlapz Tech School Banner Students Learning">
+      <div class="hero-text">
+        <h1>Welcome to Motlapz Tech School</h1>
+        <h2>Your future in technology starts here</h2>
+        <a href="services.html" class="btn">View Price List</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Our Popular Courses</h2>
+      <input type="text" id="serviceSearch" placeholder="Search courses... eg. Cyber">
+      <div id="dynamic-services" class="services-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="sitemap.xml">Sitemap</a> | <a href="https://facebook.com">Facebook</a> - Motlapz Tech 2026</p>
+  </footer>
+
+  <div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); justify-content:center; align-items:center; z-index:9999"><img id="lightbox-img" style="max-width:90%;"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
