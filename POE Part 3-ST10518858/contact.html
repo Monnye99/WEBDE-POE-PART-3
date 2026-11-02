@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Motlapz Tech School | Get In Touch | Pretoria</title>
+  <meta name="description" content="Contact Motlapz Tech School in Pretoria for IT course enquiries. Interactive map, email form, and support.">
+  <meta name="keywords" content="contact Motlapz Tech, IT school Pretoria contact, tech school enquiry">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <header>
+    <img src="images/school-logo.png" alt="Motlapz Tech School Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiries.html">Enquiries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Motlapz Tech</h1>
+    <h2>Find Us & Send Message</h2>
+    
+    
+    <div id="map" style="height:350px; margin:20px 0;"></div>
+
+    <form id="contactForm" onsubmit="return validateAndSendContact(event)">
+      <label>Full Name:
+        <input type="text" id="cName" placeholder="Your Name" required minlength="3">
+      </label>
+      <label>Email:
+        <input type="email" id="cEmail" placeholder="Email" required>
+      </label>
+      <label>Type:
+        <select id="cType" required>
+          <option value="General Enquiry">General Enquiry</option>
+          <option value="Complaint">Complaint</option>
+          <option value="Support">Support</option>
+        </select>
+      </label>
+      <label>Message:
+        <textarea id="cMessage" required minlength="10" placeholder="Type full message - at least 10 chars"></textarea>
+      </label>
+      <p id="formError" style="color:red; font-weight:bold;"></p>
+      <p id="formSuccess" style="color:green; font-weight:bold;"></p>
+      <button type="submit">Send via Email</button>
+    </form>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="sitemap.xml">Sitemap</a> | <a href="https://facebook.com">Facebook</a> - Motlapz Tech 2026</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
